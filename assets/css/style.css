@@ -1,0 +1,225 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body.store-page {
+  background-color: #FBFBFB;
+  color: #1a1a1a;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+body.store-page>header {
+  background-color: #ffffff;
+  height: 60px;
+  overflow: hidden;
+}
+
+body.store-page>header>div {
+  padding: 1em;
+}
+
+body.store-page>header h1 {
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: #000000;
+}
+
+body.store-page>nav {
+  background-color: #171818;
+  color: #eeeded;
+  height: 30px;
+}
+
+body.store-page>nav>div {
+  padding: 0.5em;
+  justify-content: center;
+}
+
+/* .content-page {
+  display: flex;
+  height: calc(100vh - 90px);
+} */
+
+body.store-page>.content-page>aside {
+  background-color: #2e2e2e;
+  color: #FBFBFB;
+  width: 180px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+body.store-page>.content-page>section>aside {
+  text-align: center;
+}
+
+body.store-page>.content-page>aside>div>h3 {
+  text-align: center;
+}
+
+.btnCategory {
+  cursor: pointer;
+  background-color: #eb5ae5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .5s ease-in-out;
+  width: 150px;
+  height: 35px;
+  margin: 5px;
+  color: #2e2e2e;
+  border: 1px solid #000;
+}
+
+.btnCategory:hover {
+  background: #2e2e2e;
+  color: #eb5ae5;
+  border: 1px solid #ffffff;
+}
+
+/* body.store-page>.content-page>section {
+  width: calc(100vw - 150px);
+  height: calc(100vh - 90px);
+  overflow-y: scroll;
+} */
+
+body.store-page>.content-page>section>h2 {
+  text-align: center;
+  color: #2e2e2e;
+  font-weight: bold;
+}
+
+.only-phone {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#pokemones-contenedor {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#pokemones-contenedor>.poke-item {
+  background-image: url("/assets/img/pokeball.png");
+  background-size: 30em;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 350px;
+  height: 350px;
+  border: solid 1px #eeeded;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#pokemones-contenedor>.poke-item>header {
+  text-align: center;
+  font-weight: normal;
+  padding: 5px;
+}
+
+#pokemones-contenedor>.poke-item>aside>div {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.btnShop {
+  cursor: pointer;
+  background-color: #2e2e2e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .5s ease-in-out;
+  width: 120px;
+  height: 35px;
+  margin: 5px;
+  color: #ff3c7b;
+  border: 1px solid #171818;
+}
+
+.btnShop:hover {
+  background: #ff3c7b;
+  color: #2e2e2e;
+}
+
+.btnMore {
+  cursor: pointer;
+  background-color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  color: #ff3c7b;
+  border: 1px solid #171818;
+}
+
+.btnMore:hover {
+  background: rgba(251, 255, 0, 0.4);
+  border: none;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(251, 255, 0, 0.4),
+              0 0 25px rgba(251, 255, 0, 0.4),
+              0 0 50px rgba(251, 255, 0, 0.4), 
+              0 0 100px rgba(251, 255, 0, 0.4);
+}
+
+#pokemones-contenedor>.poke-item:hover {
+  box-shadow: 0 0 30px rgba(251, 255, 0, 0.4);
+}
+
+.poke-item {
+  align-items: center;
+}
+
+.poke-item img {
+  width: 200px;
+  height: 150px;
+  image-rendering: crisp-edges;
+}
+
+.poke-item header {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.poke-item aside {
+  padding: 1.2em;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+
+
+  body.store-page>.content-page>aside {
+    display: none;
+  }
+
+  body.store-page>.content-page>section {
+    width: 100vw;
+  }
+
+  .only-phone {
+    display: inline;
+  }
+}
